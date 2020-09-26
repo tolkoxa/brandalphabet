@@ -1,0 +1,101 @@
+@import "_param";
+*,
+body {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 30px 100px 30px;
+    border: 1px solid red;
+}
+
+.head__style {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid green;
+}
+
+.logo__text {
+    padding: 0 0 40px 0;
+    font-family: $font__logo;
+    font-size: 4rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    &_color_black {
+        color: $color__black;
+    }
+    &__color_orange {
+        padding: 0 0 0 3px;
+        color: $color__green;
+        font-size: 4.2rem;
+        font-weight: 500;
+        font-style: italic;
+    }
+}
+
+.accent {
+    position: relative;
+    &::before {
+        content: '–';
+        font-size: 2.0rem;
+        font-weight: 500;
+        position: absolute;
+        top: -3px;
+        left: 35px;
+        color: $color__green;
+        transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+    }
+}
+
+.explanation__text {
+    font-family: $font__main;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    width: 650px;
+}
+
+.main__style {
+    border: 1px solid blue;
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 0 0 0;
+    padding: 30px 0 30px 0;
+}
+
+.desc__text {
+    font-family: $font__main;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: $color__black;
+}
+
+.letter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    &__img {}
+}
+
+.form {
+    // .form__style
+    &__style {}
+    &__input {}
+}
