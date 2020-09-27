@@ -10,15 +10,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 30px 100px 30px;
-  border: 1px solid red; }
+  padding: 50px 30px 100px 30px; }
 
 .head__style {
   width: 80%;
   display: flex;
   align-items: center;
-  flex-direction: column;
-  border: 1px solid green; }
+  flex-direction: column; }
 
 .logo__text {
   padding: 0 0 40px 0;
@@ -58,15 +56,46 @@ body {
   line-height: 1.5rem;
   width: 650px; }
 
+.link {
+  text-decoration: underline dashed;
+  cursor: pointer;
+  color: #e46613; }
+  .link:hover {
+    color: #000;
+    text-decoration: none; }
+
+.example {
+  width: 650px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 0 0 0;
+  padding: 10px 0 0 0;
+  color: grey; }
+  .example__letter {
+    width: 33%; }
+  .example__hint {
+    width: 33%; }
+    .example__hint_text-color {
+      margin: 0 0 0 0;
+      padding: 20px 0 0 0;
+      color: #000;
+      font-size: 1.2rem; }
+  .example__answer {
+    width: 33%; }
+
 .main__style {
-  border: 1px solid blue;
   width: 650px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   margin: 0 0 0 0;
-  padding: 30px 0 30px 0; }
+  padding: 40px 0 30px 0; }
 
 .desc__text {
   font-family: "Source Sans Pro", sans-serif;
@@ -76,7 +105,30 @@ body {
 
 .letter {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   padding: 20px; }
+
+.hint {
+  padding: 0 0 20px 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: grey; }
+
+.form__style {
+  padding: 20px; }
+.form__input {
+  width: 500px;
+  height: 50px;
+  outline: none;
+  padding: 10px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #000;
+  border-radius: 10px;
+  border: 1px solid #e46613;
+  text-transform: uppercase; }

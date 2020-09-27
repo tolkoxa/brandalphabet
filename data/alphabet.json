@@ -1,7 +1,265 @@
 [{
-    "id": 1,
-    "black": "1_black",
-    "color": "1_color",
-    "brend": "Ашан",
-    "hint": "одно слово"
-}]
+        "id": 1,
+        "small": "01_1.png",
+        "full": "01_full.png",
+        "name": "МИРАТОРГ",
+        "hint": "одно слово",
+        "alt": "А"
+    },
+    {
+        "id": 2,
+        "small": "02_1.png",
+        "full": "02_full.png",
+        "name": "БАЛТИКА",
+        "hint": "одно слово",
+        "alt": "Б"
+    },
+    {
+        "id": 3,
+        "small": "03_1.png",
+        "full": "03_full.png",
+        "name": "ДОМИК В ДЕРЕВНЕ",
+        "hint": "три слова",
+        "alt": "В"
+    },
+    {
+        "id": 4,
+        "small": "04_1.png",
+        "full": "04_full.png",
+        "name": "ГАЗПРОМ",
+        "hint": "одно слово",
+        "alt": "Г"
+    },
+    {
+        "id": 5,
+        "small": "05_1.png",
+        "full": "05_full.png",
+        "name": "ЭЛЬДОРАДО",
+        "hint": "одно слово",
+        "alt": "Д"
+    },
+    {
+        "id": 6,
+        "small": "06_1.png",
+        "full": "06_full.png",
+        "name": "РЕСО",
+        "hint": "одно слово",
+        "alt": "Е"
+    },
+    {
+        "id": 7,
+        "small": "07_1.png",
+        "full": "07_full.png",
+        "name": "ПЯТЁРОЧКА",
+        "hint": "одно слово",
+        "alt": "Ё"
+    },
+    {
+        "id": 8,
+        "small": "08_1.png",
+        "full": "08_full.png",
+        "name": "РЖД",
+        "hint": "аббревиатура",
+        "alt": "Ж"
+    },
+    {
+        "id": 9,
+        "small": "09_1.png",
+        "full": "09_full.png",
+        "name": "ЗЕЛЁНАЯ МАРКА",
+        "hint": "два слова",
+        "alt": "З"
+    },
+    {
+        "id": 10,
+        "small": "10_1.png",
+        "full": "10_full.png",
+        "name": "РАСТИШКА",
+        "hint": "одно слово",
+        "alt": "И"
+    },
+    {
+        "id": 11,
+        "small": "11_1.png",
+        "full": "11_full.png",
+        "name": "БИЛАЙН",
+        "hint": "одно слово",
+        "alt": "Й"
+    },
+    {
+        "id": 12,
+        "small": "12_1.png",
+        "full": "12_full.png",
+        "name": "ВКОНТАКТЕ",
+        "hint": "одно слово",
+        "alt": "К"
+    },
+    {
+        "id": 13,
+        "small": "13_1.png",
+        "full": "13_full.png",
+        "name": "ЛУКОЙЛ",
+        "hint": "одно слово",
+        "alt": "Л"
+    },
+    {
+        "id": 14,
+        "small": "14_1.png",
+        "full": "14_full.png",
+        "name": "МТС",
+        "hint": "аббревиатура",
+        "alt": "М"
+    },
+    {
+        "id": 15,
+        "small": "15_1.png",
+        "full": "15_full.png",
+        "name": "ФРУТОНЯНЯ",
+        "hint": "одно слово",
+        "alt": "Н"
+    },
+    {
+        "id": 16,
+        "small": "16_1.png",
+        "full": "16_full.png",
+        "name": "М.ВИДЕО",
+        "hint": "хм... без подсказки",
+        "alt": "О"
+    },
+    {
+        "id": 17,
+        "small": "17_1.png",
+        "full": "17_full.png",
+        "name": "ПЕРЕКРЁСТОК",
+        "hint": "одно слово",
+        "alt": "П"
+    },
+    {
+        "id": 18,
+        "small": "18_1.png",
+        "full": "18_full.png",
+        "name": "РОСНЕФТЬ",
+        "hint": "одно слово",
+        "alt": "Р"
+    },
+    {
+        "id": 19,
+        "small": "19_1.png",
+        "full": "19_full.png",
+        "name": "ЕВРОСЕТЬ",
+        "hint": "одно слово",
+        "alt": "Е"
+    },
+    {
+        "id": 20,
+        "small": "20_1.png",
+        "full": "20_full.png",
+        "name": "ТНК",
+        "hint": "аббревиатура",
+        "alt": "Л"
+    },
+    {
+        "id": 21,
+        "small": "21_1.png",
+        "full": "21_full.png",
+        "name": "ЧУДО",
+        "hint": "одно слово",
+        "alt": "У"
+    },
+    {
+        "id": 22,
+        "small": "22_1.png",
+        "full": "22_full.png",
+        "name": "АЭРОФЛОТ",
+        "hint": "одно слово",
+        "alt": "Ф"
+    },
+    {
+        "id": 23,
+        "small": "23_1.png",
+        "full": "23_full.png",
+        "name": "ДИКАЯ ОРХИДЕЯ",
+        "hint": "два слова",
+        "alt": "Х"
+    },
+    {
+        "id": 24,
+        "small": "24_1.png",
+        "full": "24_full.png",
+        "name": "ХЦ",
+        "hint": "аббревиатура",
+        "alt": "Ц"
+    },
+    {
+        "id": 25,
+        "small": "25_1.png",
+        "full": "25_full.png",
+        "name": "ПЕТРОВИЧ",
+        "hint": "одно слово",
+        "alt": "Ч"
+    },
+    {
+        "id": 26,
+        "small": "26_1.png",
+        "full": "26_full.png",
+        "name": "ШАТУРА",
+        "hint": "одно слово",
+        "alt": "Ш"
+    },
+    {
+        "id": 27,
+        "small": "27_1.png",
+        "full": "27_full.png",
+        "name": "ЩЕРБИНСКИЙ ЛИФТОСТРОИТЕЛЬНЫЙ ЗАВОД",
+        "hint": "одно слово",
+        "alt": "Ш"
+    },
+    {
+        "id": 28,
+        "small": "28_1.png",
+        "full": "28_full.png",
+        "name": "КОМЕРСАНТЪ",
+        "hint": "одно слово",
+        "alt": "Ъ"
+    },
+    {
+        "id": 29,
+        "small": "29_1.png",
+        "full": "29_full.png",
+        "name": "ДОБРЫЙ",
+        "hint": "одно слово",
+        "alt": "Ы"
+    },
+    {
+        "id": 30,
+        "small": "30_1.png",
+        "full": "30_full.png",
+        "name": "АЛЬФА БАНК",
+        "hint": "два слова",
+        "alt": "Ь"
+    },
+    {
+        "id": 31,
+        "small": "31_1.png",
+        "full": "31_full.png",
+        "name": "МАЖИТЭЛЬ",
+        "hint": "одно слово",
+        "alt": "Э"
+    },
+    {
+        "id": 32,
+        "small": "32_1.png",
+        "full": "32_full.png",
+        "name": "ПЕМОЛЮКС",
+        "hint": "одно слово",
+        "alt": "Ю"
+    },
+    {
+        "id": 33,
+        "small": "33_1.png",
+        "full": "33_full.png",
+        "name": "ЯНДЕКС",
+        "hint": "одно слово",
+        "alt": "Я"
+    }
+]

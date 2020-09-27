@@ -6,27 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,600;1,600;1,700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
+
     <title>брендАзбука</title>
 </head>
 
 <body>
-    <div class="container">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <div class="container" id="app">
         <header class="head__style">
             <p class="logo__text logo__text_color_black">БРЕНД<span class="logo__text__color_orange accent">А</span>ЗБУКА</p>
             <p class="explanation__text">Каждая буква русского алфавита представленна в виде буквы из названия бренда. Это не всегда первая буква, иногда она вторая, а иногда и последняя. Название только на русском языке. Твоя задача отгадать, из какого бренда эта буква.</p>
-            <p class="explanation__text">Например:</p>
-            <div class="example">
-
+            <a class="explanation__text link" v-on:click="visible=!visible">{{visible?'Скрыть пример':'Показать пример'}}</a>
+            <div class="example" v-show="visible">
+                <div class="example__letter">
+                    <p>Буква:</p>
+                    <img src="img/example_small.png">
+                </div>
+                <div class="example__hint">
+                    <p>Подсказка:</p>
+                    <p class="example__hint_text-color">Два слова</p>
+                </div>
+                <div class="example__answer">
+                    Правильный ответ:
+                    <img src="img/example_full.png">
+                </div>
             </div>
         </header>
         <main class="main__style">
             <p class="desc__text">Буква:</p>
             <div class="letter">
-                1
+                <img src="img/02_1.png">
+                <p class="hint">(одно слово)</p>
             </div>
             <p class="desc__text">Твой вариант:</p>
-            <form class="form__style">
-                <input class="form__input" type="text">
+            <form class="form__style" v-on:submit.prevent="submit">
+                <input class="form__input" type="text" v-on:keyup.enter="submit">
             </form>
         </main>
     </div>

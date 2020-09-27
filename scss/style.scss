@@ -11,8 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 30px 100px 30px;
-    border: 1px solid red;
+    padding: 50px 30px 100px 30px;
 }
 
 .head__style {
@@ -20,7 +19,6 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    border: 1px solid green;
 }
 
 .logo__text {
@@ -30,11 +28,11 @@ body {
     line-height: 1.25rem;
     font-weight: 500;
     &_color_black {
-        color: $color__black;
+        color: $color_black;
     }
     &__color_orange {
         padding: 0 0 0 3px;
-        color: $color__green;
+        color: $color_orange;
         font-size: 4.2rem;
         font-weight: 500;
         font-style: italic;
@@ -50,7 +48,7 @@ body {
         position: absolute;
         top: -3px;
         left: 35px;
-        color: $color__green;
+        color: $color_orange;
         transform: rotate(135deg);
         -moz-transform: rotate(135deg);
         -ms-transform: rotate(135deg);
@@ -67,35 +65,94 @@ body {
     width: 650px;
 }
 
+.link {
+    text-decoration: underline dashed;
+    cursor: pointer;
+    color: $color_orange;
+    &:hover {
+        color: $color_black;
+        text-decoration: none;
+    }
+}
+
+.example {
+    width: 650px;
+    font-family: $font__main;
+    font-weight: 400;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 0 0 0;
+    padding: 10px 0 0 0;
+    color: $color_grey;
+    &__letter {
+        width: 33%;
+    }
+    &__hint {
+        width: 33%;
+        &_text-color {
+            margin: 0 0 0 0;
+            padding: 20px 0 0 0;
+            color: $color_black;
+            font-size: 1.2rem;
+        }
+    }
+    &__answer {
+        width: 33%;
+    }
+}
+
 .main__style {
-    border: 1px solid blue;
     width: 650px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     margin: 0 0 0 0;
-    padding: 30px 0 30px 0;
+    padding: 40px 0 30px 0;
 }
 
 .desc__text {
     font-family: $font__main;
     font-weight: 400;
     font-size: 1.2rem;
-    color: $color__black;
+    color: $color_black;
 }
 
 .letter {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     padding: 20px;
-    &__img {}
+}
+
+.hint {
+    padding: 0 0 20px 0;
+    font-family: $font__main;
+    font-weight: 400;
+    font-size: 1rem;
+    color: $color_grey;
 }
 
 .form {
-    // .form__style
-    &__style {}
-    &__input {}
+    &__style {
+        padding: 20px;
+    }
+    &__input {
+        width: 500px;
+        height: 50px;
+        outline: none;
+        padding: 10px;
+        font-family: $font__main;
+        font-weight: 400;
+        font-size: 1.4rem;
+        color: $color_black;
+        border-radius: 10px;
+        border: 1px solid $color_orange;
+        text-transform: uppercase;
+    }
 }
