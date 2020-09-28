@@ -34,14 +34,14 @@
         </header>
         <main class="main__style">
             <p class="desc__text">Буква:</p>
-            <div class="letter">
-                <img src="img/02_1.png">
-                <p class="hint">(одно слово)</p>
+            <div class="letter" id="letter_img">
+                <!-- <img src="img/03_1.png">
+                <p class="hint">(одно слово)</p> -->
             </div>
             <p class="desc__text">Твой вариант:</p>
-            <form class="form__style" v-on:submit.prevent="submit">
-                <input class="form__input" type="text" v-on:keyup.enter="submit">
-            </form>
+            <!-- <form class="form__style"> -->
+            <input class="form__input" type="text" id="letter_check">
+            <!-- </form> -->
         </main>
     </div>
     <script src="script/script.js"></script>
