@@ -5,12 +5,22 @@ let app = new Vue({
     },
 });
 
+/*
+<p class="desc__text">Буква:</p>
+        <div class="letter" id="letter_img">
+        </div>
+        <p class="desc__text">Твой вариант:</p>
+        <input class="form__input" type="text" id="letter_check">
+*/
+
+
 class Alpabet {
     constructor() {
         this.allData;
         this.letterArr = [];
         this._init();
         this.letterId;
+        this.mainPlace = document.getElementById('main__place');
     }
 
     _init() {
@@ -20,10 +30,34 @@ class Alpabet {
     async getLetters() {
         let response = await fetch('data/alphabet.json');
         this.allData = await response.json();
-        this.data();
+        this.start();
     }
 
-    data() {
+    start() {
+        this.mainPlace.innerHTML = '';
+        this.mainPlace.insertAdjacentHTML('beforeend', `
+        <div class="button">
+        <button class="button__start" id="btn_start">Начать</button>
+        </div>
+        `);
+
+        document.getElementById('btn_start').addEventListener('click', this.play);
+    }
+
+    play() {
+        document.getElementById('main__place').innerHTML = '';
+        console.log('play');
+        newLetter.renderGame();
+    }
+
+    renderGame() {
+        let strLetter = `<p class="desc__text">Буква:</p>`;
+        let strImg = `<div class="letter" id="letter_img"></div>`;
+        let strInput = `<p class="desc__text">Твой вариант:</p>
+        <input class="form__input" type="text" id="letter_check">`;
+        this.mainPlace.insertAdjacentHTML('beforeend', strLetter + strImg + strInput);
+        console.log('renderGame');
+
         this.letterId = this.randomizer(this.allData.length);
 
         do {
@@ -37,14 +71,12 @@ class Alpabet {
         console.log(this.letterId);
 
         let chooseLetter = this.allData[this.letterId - 1];
-        this.renderImg(chooseLetter.small, chooseLetter.hint, chooseLetter.id, chooseLetter.name, chooseLetter.alt, chooseLetter.full)
 
-        console.log('---');
-        console.log(chooseLetter);
-        console.log(this.letterArr);
+        this.renderImage(chooseLetter.small, chooseLetter.hint, chooseLetter.id, chooseLetter.name, chooseLetter.alt, chooseLetter.full);
+
     }
 
-    renderImg(small, hint, id, name, alt, full) {
+    renderImage(small, hint, id, name, alt, full) {
         let letterCode = document.getElementById('letter_img');
         letterCode.innerHTML = `<img src="img/${small}" title="${alt}"><p class="hint">${hint}</p>`;
 
@@ -56,6 +88,19 @@ class Alpabet {
                 newLetter.renderFull(full);
             }
         });
+    }
+
+    data() {
+
+        this.renderImg(chooseLetter.small, chooseLetter.hint, chooseLetter.id, chooseLetter.name, chooseLetter.alt, chooseLetter.full)
+
+        console.log('---');
+        console.log(chooseLetter);
+        console.log(this.letterArr);
+    }
+
+    render_Img(small, hint, id, name, alt, full) {
+
     }
 
     renderFull(full) {
