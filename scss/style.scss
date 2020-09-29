@@ -156,3 +156,38 @@ body {
         text-transform: uppercase;
     }
 }
+
+.button {
+    margin: 0 0 0 0;
+    padding: 30px 10px;
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__start {
+        width: 220px;
+        height: 60px;
+        border-radius: 20px;
+        background-color: $color_orange;
+        color: $color_white;
+        font-family: $font__main;
+        font-weight: 500;
+        font-size: 1.4rem;
+        outline: none;
+        border: 2px solid $color_white;
+        box-shadow: 11px 12px 16px 1px #E4663B;
+        transition: 0.2s;
+        &:hover {
+            background-color: $color_grey;
+            color: $color_black;
+            cursor: pointer;
+            border: 2px solid $color_grey;
+        }
+        &:active {
+            box-shadow: 0px 0px 10px 0px #E4663B;
+            transition: 0.2s;
+            padding: 0 10px 5px 0;
+            // color: $color_white;
+        }
+    }
+}
