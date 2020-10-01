@@ -15,12 +15,17 @@ let app = new Vue({
 
 
 class Alpabet {
-    constructor() {
+    constructor(countAnswer = 0) {
         this.allData;
         this.letterArr = [];
         this._init();
         this.letterId;
         this.mainPlace = document.getElementById('main__place');
+        this.countAnswer = countAnswer;
+        this.rightAnswer;
+        this.skipLetter = [];
+        this.skipLetterCount = false;
+        this.countFirst = false;
     }
 
     _init() {
@@ -46,17 +51,27 @@ class Alpabet {
 
     play() {
         document.getElementById('main__place').innerHTML = '';
-        console.log('play');
         newLetter.renderGame();
     }
 
     renderGame() {
+        let divClass;
+        let skipClass;
+        let skipCount;
+        (this.skipLetterCount || this.countAnswer) ? divClass = "count": divClass = "novisible";
+        (this.skipLetterCount) ? skipClass = "skip__letter": skipClass = "novisible";
+        (this.countAnswer) ? skipCount = "count__numbers": skipCount = "novisible";
+
+
+        let strCount = `<div class="${divClass}">
+        <div class="${skipClass}" id="countSkip">&nbsp;</div>
+        <div class="${skipCount}" id="countNumb"> Счёт 3/10</div>
+        </div>`;
         let strLetter = `<p class="desc__text">Буква:</p>`;
         let strImg = `<div class="letter" id="letter_img"></div>`;
         let strInput = `<p class="desc__text">Твой вариант:</p>
         <input class="form__input" type="text" id="letter_check">`;
-        this.mainPlace.insertAdjacentHTML('beforeend', strLetter + strImg + strInput);
-        console.log('renderGame');
+        this.mainPlace.insertAdjacentHTML('beforeend', strCount + strLetter + strImg + strInput);
 
         this.letterId = this.randomizer(this.allData.length);
 
@@ -123,7 +138,7 @@ class Alpabet {
         console.log('-arr-');
         console.log(this.letterArr);
         console.log('-arr-');
-        this.data();
+        this.renderImage();
     }
 
     finish() {

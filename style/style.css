@@ -162,3 +162,16 @@ body {
       box-shadow: 0px 0px 10px 0px #E4663B;
       transition: 0.2s;
       padding: 0 10px 5px 0; }
+
+.novisible {
+  display: none; }
+
+.count {
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0 0 0 0;
+  padding: 0 0 30px 0;
+  border: 1px solid red; }
