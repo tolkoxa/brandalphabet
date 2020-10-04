@@ -1,4 +1,12 @@
 [{
+        "id": 0,
+        "small": "",
+        "full": "",
+        "name": "",
+        "hint": "",
+        "alt": ""
+    },
+    {
         "id": 1,
         "small": "01_1.png",
         "full": "01_full.png",

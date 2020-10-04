@@ -225,3 +225,21 @@ body {
     margin: 0 0 0 0;
     padding: 0 0 30px 0;
 }
+
+.skip__letter {
+    font-family: $font__main;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: $color_orange;
+    margin: 0 0 0 0;
+    padding: 0 0 10px 0;
+}
+
+.count__numbers {
+    font-family: $font__main;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: $color_black;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
