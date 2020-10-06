@@ -15,6 +15,7 @@
         <header class="head__style">
             <p class="logo__text logo__text_color_black">БРЕНД<span class="logo__text__color_orange accent">А</span>ЗБУКА</p>
             <p class="explanation__text">Каждая буква русского алфавита представленна в виде буквы из названия бренда. Это не всегда первая буква, иногда она вторая, а иногда и последняя. Название только на русском языке. Твоя задача отгадать, из какого бренда эта буква.</p>
+            <!-- <p class="explanation__text">Для удобства любая кнопка &laquo;нажимается&raquo; клавишей enter. &laquo;Пропустить...&raquo; же, только мышкой.</p> -->
             <a class="explanation__text link" v-on:click="visible=!visible">{{visible?'Скрыть пример':'Показать пример'}}</a>
             <div class="example" v-show="visible">
                 <div class="example__letter">
@@ -36,13 +37,47 @@
                 <div id="countSkip"></div>
                 <div id="countNumb"></div>
             </div>
-            <div class="main__style" id="main__place">
-
+            <div class="main__style" id="main__place"></div>
+            <div class="social-links" id="#share">
+                <p class="text__title text__title_indents">
+                    Поделись этой игрой
+                </p>
+                <div class="ya-share2 text__title_indents" data-services="vkontakte,facebook,twitter,odnoklassniki,telegram,whatsapp,linkedin,moimir,evernote,lj,pocket,viber"></div>
+            </div>
+            <div id="sendmoney">
+                <iframe src="https://money.yandex.ru/quickpay/shop-widget?writer=seller&targets=Поблагодарить разработчика&targets-hint=&default-sum=50&button-text=11&payment-type-choice=on&mobile-payment-type-choice=on&hint=&successURL=http%3A%2F%2Fbullsandcows.plan-b.studio%2Fthankyou&quickpay=shop&account=4100179784556"
+                    width="650" height="250" frameborder="0" allowtransparency="true" scrolling="no" allowTransparency="yes" class="text__title_indents iframe-style"></iframe>
             </div>
         </main>
+        <section class="section__style">
+            <div class="section__style_center">Сделал <a class="site_link" href="http://tolkoxa.ru?utm=link&type=game&name=brend" target="_blanck">tolkoxa.ru</a></div>
+            <div class="footer">
+                <div class="footer_text">На что ещё стоит обратить внимание</div>
+                <div class="footer_center">
+                    <div class="footer_item">
+                        <p class="footer_title"><a class="footer_title_link" href="http://corrector.tolkoxa.ru/?utm=link&type=game&name=brend" target="_blanck">Корректор текста</a></p>
+                        <p class="footer_desc_service"><a class="footer_desc_service_link" href="http://corrector.tolkoxa.ru/?utm=link&type=game&name=brend" target="_blanck">Сервис убирает &laquo;мелкий мусор&raquo; из текста. Хорошо подходит для постов в соцсетях.</a></p>
+                    </div>
+                    <div class="footer_item">
+                        <p class="footer_title"><a class="footer_title_link" href="http://answer.tolkoxa.ru/?utm=link&type=game&name=brend" target="_blanck">Музыкальный ответ</a></p>
+                        <p class="footer_desc_service"><a class="footer_desc_service_link" href="http://answer.tolkoxa.ru/?utm=link&type=game&name=brend" target="_blanck">Музыкальные ответы на часто задаваемый вопрос «Когда?» и на просьбу, от неприятного человека.</a></p>
+                    </div>
+                    <div class="footer_item">
+                        <p class="footer_title">Игра &laquo;<a class="footer_title_link" href="http://games.tolkoxa.ru/bullsandcows/?utm=link&type=game&name=brend" target="_blanck">Быки и Коровы</a>&raquo;</p>
+                        <p class="footer_desc_service"><a class="footer_desc_service_link" href="http://games.tolkoxa.ru/bullsandcows/?utm=link&type=game&name=brend" target="_blanck">Браузерная игра на развитие логичного мышления, счёта и памяти.</a></p>
+                    </div>
+                    <div class="footer_item">
+                        <p class="footer_title">Cервис &laquo;<a class="footer_title_link" href="http://danet.tolkoxa.ru/?utm=link&type=game&name=brend" target="_blanck">Да/Нет</a>&raquo;</p>
+                        <p class="footer_desc_service"><a class="footer_desc_service_link" href="http://danet.tolkoxa.ru/?utm=link&type=game&name=brend" target="_blanck">Задай вопрос «вселенной» на который можно ответить только «да» или «нет».</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="script/script.js"></script>
+    <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js" defer></script>
+    <script src="https://yastatic.net/share2/share.js" defer></script>
 </body>
 
 </html>
