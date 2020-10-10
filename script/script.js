@@ -89,7 +89,7 @@ class Alpabet {
 
             //Рендер изображения
             let letterCode = document.getElementById('letter_img');
-            letterCode.innerHTML = `<img src="img/${this.chooseLetter.small}" title="${this.chooseLetter.alt}"><p class="hint">${this.chooseLetter.hint}</p>`;
+            letterCode.innerHTML = `<img class="letter__img" src="img/${this.chooseLetter.small}" title="${this.chooseLetter.alt}"><p class="hint">${this.chooseLetter.hint}</p>`;
 
             let keyd = document.getElementById('letter_check');
             keyd.addEventListener('keydown', function(e) {
@@ -114,7 +114,7 @@ class Alpabet {
     showAnswer(answer, name, id, full) {
         answer = answer.toUpperCase();
         let strLetter = `<p class="desc__text">Бренд:</p>`;
-        let strImg = `<div class="letter" id="letter_img"><img src="img/${full}"></div>`;
+        let strImg = `<div class="letter" id="letter_img"><img class="letter__img" src="img/${full}"></div>`;
         let strInput = `<p class="desc__text">Твой вариант: ${answer}</p>
         <p class="desc__text">Правильный ответ: ${name}</p>
         <div class="button">
