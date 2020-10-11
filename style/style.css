@@ -402,6 +402,8 @@ body {
       width: 98%; }
     .footer_desc_service {
       padding: 0 0 20px 0; }
+    .footer_item {
+      width: 98%; }
 
   .logo__text {
     font-size: 2rem; }
